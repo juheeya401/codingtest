@@ -4,7 +4,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * ⭐️01-06
+ * ️01-06
+ * 2022-03-07: ❌
  * 중복되는 문자 중복제거/순서대로 나열하기
  * 내가 푼 것과 강의의 방식이 다르다!
  */

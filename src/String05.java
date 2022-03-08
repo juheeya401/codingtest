@@ -2,7 +2,8 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 /**
- * ⭐️ 01-05
+ * 01-05
+ * 2022-03-07: ❌
  * 특수문자 제외하고 알파벳만 가공하기 -> 혼자풀기 실패
  * 문제해결 할 로직을 제대로 생각해야한다!!!!
  */
@@ -56,7 +57,7 @@ public class String05 {
     }
 
     // 다시풀기2. 정답..;;
-    // 강의의 정답
+    // ⭐️ 강의의 정답
     public static void personal_re02(String text) {
         int left = 0;
         int right = text.length() - 1;
