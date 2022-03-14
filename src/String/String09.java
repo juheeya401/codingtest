@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 /**
@@ -10,7 +12,8 @@ public class String09 {
         Scanner scanner = new Scanner(System.in);
         String text = scanner.nextLine();
         //int answer = personal(text);
-        int answer = solution02(text);
+        //int answer = solution02(text);
+        int answer = personal_sec(text);
         System.out.println(answer);
     }
 
@@ -56,5 +59,13 @@ public class String09 {
             }
         }
         return Integer.parseInt(answer.toString());
+    }
+
+    public static int personal_sec(String text) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (char x : text.toCharArray()) {
+            if (Character.isDigit(x)) stringBuilder.append(x);
+        }
+        return Integer.parseInt(stringBuilder.toString());
     }
 }

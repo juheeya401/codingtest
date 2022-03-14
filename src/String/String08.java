@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -14,7 +16,7 @@ public class String08 {
     }
 
     /**
-     * String07처럼 풀면 알파벳만 검사할 수 없다. String05 처럼 좌/우 포인터를 두고 알파벳인지 체크하면서 검사해야 한다.
+     * String07처럼 풀면 알파벳만 검사할 수 없다. String.String05 처럼 좌/우 포인터를 두고 알파벳인지 체크하면서 검사해야 한다.
      */
     private static String personal(String text) {
         text = text.toLowerCase(Locale.ROOT);
