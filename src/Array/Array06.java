@@ -3,6 +3,9 @@ package Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * todo 강의
+ */
 public class Array06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

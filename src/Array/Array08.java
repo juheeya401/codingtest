@@ -3,6 +3,9 @@ package Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * todo 강의 & 풀기
+ */
 public class Array08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -13,22 +16,33 @@ public class Array08 {
      * 입력값 정렬하고
      * max 길이만큼 배열 만들어서
      * 점수=index, 값=등수로 저장한다
-     * 등수는 가장 꼴등부터 매기고, 만약 다음 값이랑 이전값이랑 같으면 등수를 올린다
+     * 1등부터 매기고, 다음 점수도 같다면 등수 유지한다.
      * 출력할 때는 원래 받은 값들을 갖고 인덱스 찾아서 등수를 입력한다
      */
     static void personal(Scanner scanner) {
         int count = scanner.nextInt();
-        int[] inputs = new int[count];
+        int[] in = new int[count];
         for (int i=0; i<count;i++) {
-            inputs[i] = scanner.nextInt();
+            in[i] = scanner.nextInt();
         }
-        int[] sortedArray = Arrays.copyOf(inputs, count);
-        Arrays.sort(sortedArray);
 
-        int maxScore = sortedArray[count-1];
-        int[] dngsu = new int[maxScore+1];
-        for (int i=count; i>=0; i--) {
+        int[] sort = Arrays.copyOf(in, count + 1);
+        Arrays.sort(sort);
 
+        int maxScore = sort[count-1];
+
+        int[] ranking = new int[maxScore+1];
+        for (int i=count-1; i<=0; i--) {
+            int score = sort[i];// 점수
+            if (score != sort[i+1]) {
+                ranking[score] = count - i;
+            }
         }
+
+        // 출력
+        for (int i=0; i<count; i++) {
+            System.out.println(ranking[in[i]]);
+        }
+
     }
 }
