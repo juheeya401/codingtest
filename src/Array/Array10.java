@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Array10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        personal(scanner);// 변경 후
+        personal(scanner);
     }
 
     /**
