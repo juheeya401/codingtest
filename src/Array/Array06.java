@@ -8,7 +8,8 @@ import java.util.Scanner;
 import static utils.ArrayUtils.*;
 
 /**
- * todo 강의
+ * 02-06 뒤집은 소수
+ * 2022-04-05: ⭕ (알고리즘이 다름. 반성할 점도 있으니 읽어보기)
  */
 public class Array06 {
     public static void main(String[] args) {
