@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 /**
  * todo 강의 & 풀기
+ * 02-08. 등수구하기
+ * 2022-04-05: ❌
  */
 public class Array08 {
     public static void main(String[] args) {

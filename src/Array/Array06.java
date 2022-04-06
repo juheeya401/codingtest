@@ -8,7 +8,7 @@ import java.util.Scanner;
 import static utils.ArrayUtils.*;
 
 /**
- * 02-06 뒤집은 소수
+ * 02-06 뒤집은 소수 (어렵)
  * 2022-04-05: ⭕ (알고리즘이 다름. 반성할 점도 있으니 읽어보기)
  */
 public class Array06 {
