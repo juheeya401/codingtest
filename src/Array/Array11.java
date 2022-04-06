@@ -3,6 +3,7 @@ package Array;
 import java.util.Scanner;
 
 /**
+ * todo 강의해설보기
  * 02-11. 임시반장 정하기
  * 2022-04-: ❌
  */
