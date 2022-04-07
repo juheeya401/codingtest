@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * 02-
+ * 03-
  * 2022-04-: ⭕, ❌
  */
 public class Template {
