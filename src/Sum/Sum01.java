@@ -1,9 +1,11 @@
 package Sum;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /**
- * 2022-03-30: ❌
+ * todo 강의풀이
+ * 2022-04-07: ⭕️
  */
 public class Sum01 {
     public static void main(String[] args) {
@@ -12,30 +14,27 @@ public class Sum01 {
     }
 
     /**
-     * 사전풀이: ❌
-     * 원인분석:
+     * 전) 내가 풀기
+     * 방법: 자바에 있는 유틸을 사용했다.
      */
     private static void personal(Scanner scanner) {
         int firstCount = scanner.nextInt();
-        Integer[] firstArray = new Integer[firstCount];
+        int[] firstArray = new int[firstCount];
         for (int i = 0; i < firstCount; i++) {
             firstArray[i] = scanner.nextInt();
         }
 
         int secondCount = scanner.nextInt();
-        Integer[] secondArray = new Integer[secondCount];
+        int[] secondArray = new int[secondCount];
         for (int i = 0; i < secondCount; i++) {
             secondArray[i] = scanner.nextInt();
         }
 
-        Set<Integer> sortedList = new LinkedHashSet<>();
-
-        // start------------------------------------
-        List<Integer> firstList = Arrays.asList(firstArray);
-        List<Integer> secList = Arrays.asList(secondArray);
-
-        sortedList.addAll(firstList);
-        sortedList.addAll(secList);
-        sortedList.stream().sorted().forEach(e -> System.out.print(e + " "));
+        // java.lang 의 System 객체 사용!
+        int[] newArr = new int[firstCount + secondCount];
+        System.arraycopy(firstArray, 0, newArr, 0, firstCount);
+        System.arraycopy(secondArray, 0, newArr, firstCount, secondCount);
+        Arrays.sort(newArr);
+        Arrays.stream(newArr).forEach(e -> System.out.print(e + " "));
     }
 }

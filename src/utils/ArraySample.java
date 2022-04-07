@@ -113,8 +113,18 @@ public class ArraySample {
         System.out.println("list2.toString() : " + list2.toString());
         // list2.toString() : [1, 2, 3, 4, 5]
 
-        list.add(6);
-        // UnsupportedOperationException 에러 발생
+        // ‼️ UnsupportedOperationException 에러 발생
+        //list.add(6);
         // -> 주의 : asList()로 생성 시 사이즈 변경, 추가, 삭제 불가.
+        
+        // 배열 합치기 (copy 이용)
+        int[] firstArr = new int[]{1,2,3};
+        int[] secondArr = new int[]{2,3,4,5};
+        int[] newArr = new int[firstArr.length + secondArr.length];
+        // System.arraycopy(복사원본Arr, 복사원본에서가져올Index, 새Arr, 새 Arr 의 붙여넣을 Index, 복사할 원소 갯수)
+        System.arraycopy(firstArr, 0, newArr, 0, firstArr.length);
+        System.arraycopy(secondArr, 0, newArr, firstArr.length, secondArr.length);
+        Arrays.sort(newArr);
+        Arrays.stream(newArr).forEach(e -> System.out.print(e + " ")); // 결과 => 1 2 2 3 3 4 5
     }
 }
