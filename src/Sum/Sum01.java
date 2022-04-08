@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 /**
  * todo 강의풀이
+ * 03-01. 두 배열 합치기
  * 2022-04-07: ⭕️
  */
 public class Sum01 {
