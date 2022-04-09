@@ -3,6 +3,8 @@ package DfsDfs;
 /**
  * 07-05. 이진트리순회(DFS : Depth-First Search)
  * #DFS #깊이우선탐색 #DFS탐색하는방법
+ *
+ * 깊게 검색한다!
  * #이진트리기본⭐️ -> 앞으로 할 알고리즘에서 많이 활용될 개념!
  *
  * 전위순회: root -> 왼 -> 오른쪽 순서대로 방문하는 방법
@@ -12,12 +14,12 @@ package DfsDfs;
  * 후위순회: 자식 -> 자식 -> root (병합정렬 시 사용됨)
  *   - 출력: 4 5 2 6 7 3 1
  */
-public class DfsBfs05 {
+public class Dfs05 {
 
     Node root;
 
     public static void main(String[] args) {
-        DfsBfs05 tree = new DfsBfs05();
+        Dfs05 tree = new Dfs05();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.right = new Node(3);
