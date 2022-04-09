@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 /**
  * 02-04 피보나치 수열
+ * #피보나치
  * 2022-03-11:⭕
  */
 public class Array04 {
@@ -49,9 +50,11 @@ public class Array04 {
      */
     private static void solution(int count) {
         int[] answer = new int[count];
+        // 피보나치수열은 무조건 1 1 두 숫자로 시작한다. 미리 세팅하고 시작한다.
         answer[0] = 1;
         answer[1] = 1;
         for (int i=2; i<count; i++) {
+            // 현재 수 = 앞수 + 앞앞수
             answer[i] = answer[i -2] + answer[i-1];
         }
         for (int x : answer) {
