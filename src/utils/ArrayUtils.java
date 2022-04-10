@@ -4,6 +4,7 @@ public class ArrayUtils {
 
     /***
      * 소수 구하기
+     * #소수구하기
      * @param maxNum 범위 최대값
      * @return sosuArray index = 숫자, 배열값 = 소수 여부(0=소수, 1=소수아님)
      */
@@ -39,7 +40,7 @@ public class ArrayUtils {
     }
 
     /**
-     * 소수여부 체크
+     * 소수여부 체크(이거 비추. 너무 오래걸릴 것임)
      * @param number
      * @return boolean
      */

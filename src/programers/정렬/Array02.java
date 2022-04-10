@@ -7,6 +7,8 @@ import java.util.stream.Collectors;
 /**
  * 정렬 > 가장 큰 수
  * ⭐️ 컨셉, 그 외 구현방법 등 공부 할 게 많다!! 꼭 성공 코드의 주석들을 읽어보자
+ * #우선큐 #우선순위큐 #PriorityQueue
+ * 우선큐설명: https://coding-factory.tistory.com/603
  * <p>
  * 문제 설명
  * 0 또는 양의 정수가 주어졌을 때, 정수를 이어 붙여 만들 수 있는 가장 큰 수를 알아내 주세요.
