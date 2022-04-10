@@ -1,4 +1,4 @@
-package DfsDfs;
+package inflearnCodingTest.DfsDfs;
 
 /**
  * 07-06. 부분집합 구하기(DFS)

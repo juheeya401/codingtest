@@ -1,4 +1,4 @@
-package DfsDfs;
+package inflearnCodingTest.DfsDfs;
 
 /**
  * 07-02. 이진수 출력(재귀)

@@ -1,4 +1,4 @@
-package DfsDfs;
+package inflearnCodingTest.DfsDfs;
 
 import java.util.LinkedList;
 import java.util.Queue;

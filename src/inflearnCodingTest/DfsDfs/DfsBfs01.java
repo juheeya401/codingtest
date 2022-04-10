@@ -1,4 +1,4 @@
-package DfsDfs;
+package inflearnCodingTest.DfsDfs;
 
 /**
  * 07-01. 재귀함수

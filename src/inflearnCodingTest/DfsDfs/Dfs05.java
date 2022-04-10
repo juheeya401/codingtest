@@ -1,4 +1,4 @@
-package DfsDfs;
+package inflearnCodingTest.DfsDfs;
 
 /**
  * 07-05. 이진트리순회(DFS : Depth-First Search)

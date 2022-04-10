@@ -1,4 +1,4 @@
-package DfsDfs;
+package inflearnCodingTest.DfsDfs;
 
 /**
  * 07-03 팩토리얼 (채점x)
