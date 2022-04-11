@@ -1,5 +1,7 @@
 package inflearnCodingTest.TwoPointer;
 
+import utils.ElapsedTimeUtils;
+
 import java.util.Scanner;
 
 /**
@@ -34,9 +36,14 @@ import java.util.Scanner;
  * 56
  */
 public class TwoPointer03 {
+
     public static void main(String[] args) {
+        ElapsedTimeUtils.start();
+
         Scanner scanner = new Scanner(System.in);
         personal(scanner);
+
+        ElapsedTimeUtils.finish();
     }
 
     /**
