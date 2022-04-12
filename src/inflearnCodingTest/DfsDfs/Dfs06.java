@@ -35,7 +35,7 @@ public class Dfs06 {
 
     public static void main(String[] args) {
         Dfs06 tree = new Dfs06();
-        N = 3;
+        N = 4;
         ch = new int[N +1];
 
         // 1레벨부터 시작하라는 뜻
