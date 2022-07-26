@@ -1,4 +1,4 @@
-package real;
+package real.line202204;
 
 /**
  * 2022-04 라인 코딩테스트
