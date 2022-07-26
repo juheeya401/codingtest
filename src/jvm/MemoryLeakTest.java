@@ -15,6 +15,7 @@ public class MemoryLeakTest {
     private List<BigData> strongReferences = new LinkedList<>();
 
     // 약참조 - GC 발생하면 무조건 회수된다.즉, GC 실행 주기와 일치하다
+    // oom 발생하지 않음
     public void weakReferenceTest() {
         try {
             for (int i = 0; true; i++) {
@@ -26,6 +27,7 @@ public class MemoryLeakTest {
     }
 
     // 소프트 참조 - 무조건 회수되는건 아니지만, OOM 에 가까워지면 수거된다.
+    // oom 발생하지 않음
     public void softReferenceTest() {
         try {
             for (int i = 0; true; i++) {
@@ -37,7 +39,7 @@ public class MemoryLeakTest {
     }
 
     // 강참조 - 참조된 객체는 GC 대상에서 제외된다. 즉, 정리되지 않는다. 일반적으로 new 로 생성되는 객체는 강참조이다.
-    //
+    // ⭐️ oom 발생함.
     public void strongReferenceTest() {
         try {
             for (int i = 0; true; i++) {
